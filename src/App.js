@@ -6,12 +6,14 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ShopPage from './pages/ShopPage';
+import AdminAddProduct from './pages/AdminAddProduct'; // 👈 důležitý import!
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
+        <Route path="/admin/add-product" element={<AdminAddProduct />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/about" element={<AboutPage />} />

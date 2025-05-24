@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // přidáme styly zvlášť
+import './Navbar.css';
 
 function Navbar() {
   return (
@@ -20,9 +20,14 @@ function Navbar() {
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
       </div>
+
+      <div className="nav-right">
+        <Link to="/admin/add-product" className="admin-link">+ Add Product</Link>
+      </div>
     </nav>
   );
 }
 
 export default Navbar;
+
 
